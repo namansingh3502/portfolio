@@ -3,7 +3,6 @@ import twitter_svg from '../images/twitter.svg'
 import linkedin_svg from '../images/linkedin.svg'
 import instagram_svg from '../images/instagram.svg'
 import github_svg from '../images/github.svg'
-import gmail_svg from '../images/gmail.svg'
 
 const icons = [
 
@@ -37,16 +36,18 @@ export default function Home() {
       <div className={"w-full flex items-center justify-center"}>
         <div className={"w-full max-w-7xl grid gap-2 grid-cols-9 lg:grid-cols-10"}>
           <div
-            className={"col-span-3 col-start-2 flex justify-center items-center rounded-2xl lg:m-8"}>
+            className={"col-start-2 col-span-7s md:col-span-3 flex justify-center items-center rounded-2xl lg:m-8"}>
             <img
               className={"flex flex-row object-contain mx-3 rounded-2xl border-2 border-amber-400 p-2"}
               src={image}
-              alt={"profile photo"}/>
+              alt={"profile photo"}
+              style={{"max-height": "350px"}}
+            />
           </div>
 
-          <div className={"h-full col-start-5 col-span-4 lg:col-span-5 flex flex-wrap items-center px-4"}>
+          <div className={"h-full col-start-2 md:col-start-5 col-span-7 md:col-span-4 lg:col-span-5 flex flex-wrap items-center px-4"}>
 
-            <div className={"flex flex-col gap-2 lg:gap-10 justify-between"}>
+            <div className={"flex flex-col gap-2 lg:gap-10 justify-between"} style={{"min-height":"300px"}}>
               <div
                 className={"w-full flex-col leading-normal lg:leading-relaxed font-bold font-serif space-y-4 lg:space-y-8"}>
                 <h1 className={"text-4xl lg:text-5xl"}>Hey there, <span className={"wave"}>👋🏻</span> I'm <span

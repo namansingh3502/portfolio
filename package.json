@@ -2,7 +2,6 @@
   "name": "portfoilio",
   "version": "1.0.0",
   "description": "Portfolio v3",
-  "main": "src/App.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",

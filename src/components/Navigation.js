@@ -7,8 +7,6 @@ export default function Navigation(props) {
     {"id": "projects", "name": "Project"}
   ]
 
-  console.log("active page ", props.activePage)
-
   return (
     <div className={"fixed h-full w-10 top-0 right-0 flex flex-col justify-center items-center space-y-3 z-50"}>
 

@@ -1,17 +1,15 @@
 import {createRoot} from "react-dom/client";
 import Navigation from "./components/Navigation";
 import useScrollspy from "./components/Scrollspy";
+import Home from "./components/Home";
 
 const App = () => {
   const activeId = useScrollspy(["home"]);
 
   return (
     <div className={"text-white min-h-screen relative"}>
-      <Navigation activePage={activeId}/>
-
-      <section id={"home"} className={"min-h-screen"}>
-        Home
-      </section>
+      {window.innerWidth > 650 ? <Navigation activePage={activeId}/> : null}
+      <Home/>
       <section id={"about"} className={"min-h-screen"}>
         About
       </section>

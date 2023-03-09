@@ -36,7 +36,7 @@ export default function Home() {
       <div className={"w-full flex items-center justify-center"}>
         <div className={"w-full max-w-7xl grid gap-2 grid-cols-9 lg:grid-cols-10"}>
           <div
-            className={"col-start-2 col-span-7s md:col-span-3 flex justify-center items-center rounded-2xl lg:m-8"}>
+            className={"col-start-2 col-span-7 md:col-span-3 flex justify-center items-center rounded-2xl lg:m-8"}>
             <img
               className={"flex flex-row object-contain mx-3 rounded-2xl border-2 border-amber-400 p-2"}
               src={image}

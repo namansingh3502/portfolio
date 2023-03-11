@@ -1069,6 +1069,10 @@ html {
     grid-column: span 2 / span 2;
   }
 
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
   .lg\:col-start-5 {
     grid-column-start: 5;
   }

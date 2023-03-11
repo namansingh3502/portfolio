@@ -34,29 +34,28 @@ export default function Home() {
     <section id={"home"}
              className={"h-screen h-screen container mx-auto min-h-screen flex items-center justify-center"}>
       <div className={"w-full flex items-center justify-center"}>
-        <div className={"w-full max-w-7xl grid gap-2 grid-cols-9 lg:grid-cols-10"}>
-          <div
-            className={"col-start-2 col-span-7 md:col-span-3 flex justify-center items-center rounded-2xl lg:m-8"}>
+        <div className={"w-full max-w-7xl grid grid-cols-9 gap-2 px-2 md:px-6"}>
+          <div className={"col-start-1 col-span-9 md:col-span-3 flex justify-center items-center rounded-2xl lg:px-2"}>
             <img
-              className={"flex flex-row object-contain mx-3 rounded-2xl border-2 border-amber-400 p-2"}
+              className={"flex flex-row object-contain m-4 lg:my-0 rounded-2xl border-2 border-amber-400 p-2"}
               src={image}
               alt={"profile photo"}
               style={{"max-height": "350px"}}
             />
           </div>
 
-          <div className={"h-full col-start-2 md:col-start-5 col-span-7 md:col-span-4 lg:col-span-5 flex flex-wrap items-center px-4"}>
+          <div className={"h-full sm:col-start-2 md:col-start-4 col-span-9 sm:col-span-7 md:col-span-6 lg:col-span-6 flex flex-wrap items-center px-4 lg:px-2"}>
 
-            <div className={"flex flex-col gap-2 lg:gap-10 justify-between"} style={{"min-height":"300px"}}>
+            <div className={"flex flex-col gap-2 justify-between items-center md:items-start space-y-4"}>
               <div
-                className={"w-full flex-col leading-normal lg:leading-relaxed font-bold font-serif space-y-4 lg:space-y-8"}>
+                className={"w-full flex-col leading-normal lg:leading-relaxed font-bold font-serif space-y-6 lg:space-y-8"}>
                 <h1 className={"text-4xl lg:text-5xl"}>Hey there, <span className={"wave"}>👋🏻</span> I'm <span
                   className={"bg-clip-text text-transparent bg-gradient-to-r font-extrabold from-pink-600 to-sky-600 selection:text-gray-800"}>Naman Singh</span>
                 </h1>
                 <p className={"text-lgz lg:text-xl font-normal text-gray-300"}>Software developer based in bangalore. I
                   like to make digital experiences easier and simpler for people. </p>
               </div>
-              <div className={"h-20 w-full flex space-x-4"}>
+              <div className={"h-20 w-full flex items-center justify-center md:justify-start space-x-4"}>
                 {icons.map((item) => {
                     return (
                       <a className={"w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center"}

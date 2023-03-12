@@ -32,7 +32,7 @@ const icons = [
 export default function Home() {
   return (
     <section id={"home"}
-             className={"h-screen h-screen container mx-auto min-h-screen flex items-center justify-center"}>
+             className={"h-screen min-h-screen container mx-auto flex items-center justify-center relative"}>
       <div className={"w-full flex items-center justify-center"}>
         <div className={"w-full max-w-7xl grid grid-cols-9 gap-2 px-2 md:px-6"}>
           <div className={"col-start-1 col-span-9 md:col-span-3 flex justify-center items-center rounded-2xl lg:px-2"}>
@@ -74,7 +74,7 @@ export default function Home() {
 
         </div>
       </div>
-      <div className={"text-slate-400 font-semibold absolute bottom-8"}>∿∿∿</div>
+      <div className={"text-white text-xl font-sans absolute bottom-6"}>~~~</div>
     </section>
   )
 }

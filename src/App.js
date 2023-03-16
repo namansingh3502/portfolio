@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 import useScrollspy from "./components/Scrollspy";
 import Home from "./components/Home";
 import About from "./components/About";
+import Skills from "./components/Skills";
 
 const App = () => {
   const activeId = useScrollspy(["home"]);
@@ -12,9 +13,7 @@ const App = () => {
       {window.innerWidth > 650 ? <Navigation activePage={activeId}/> : null}
       <Home/>
       <About/>
-      <section id={"skills"} className={"min-h-screen"}>
-        Skills
-      </section>
+      <Skills/>
       <section id={"projects"} className={"min-h-screen"}>
         Projects
       </section>

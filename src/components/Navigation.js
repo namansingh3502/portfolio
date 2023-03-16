@@ -12,16 +12,12 @@ export default function Navigation(props) {
 
       {PAGE.map((page) => {
         return (
-          // <NAVBUTTON
-          //   key={page.name}
-          //   data={page}
-          //   isActive={props.activePage.includes(page.id)}
-          //   isTop={props.activePage.indexOf(page.id) === 1}
-          // />
           <div className={"group relative"}>
             <div className={"absolute right-6 -top-1 group-hover:block hidden font-semibold text-xl"}>{page.name}</div>
-            <div
-              className={`rounded-full w-4 h-4 ${props.activePage.includes(page.id) ? "bg-indigo-600" : "bg-gray-400"}`}/>
+            <a href={`#${page.id}`}>
+              <div
+                className={`rounded-full w-4 h-4 ${props.activePage.includes(page.id) ? "bg-indigo-600" : "bg-gray-400"}`}/>
+            </a>
           </div>
         )
       })

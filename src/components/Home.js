@@ -1,4 +1,4 @@
-import image from '../images/me.jpg';
+import image from '../images/me.webp';
 import twitter_svg from '../images/twitter.svg'
 import linkedin_svg from '../images/linkedin.svg'
 import instagram_svg from '../images/instagram.svg'
@@ -48,8 +48,8 @@ export default function Home() {
 
             <div className={"flex flex-col gap-2 justify-between items-center md:items-start space-y-4"}>
               <div
-                className={"w-full flex-col leading-normal lg:leading-relaxed font-bold font-serif space-y-6 lg:space-y-8"}>
-                <h1 className={"text-4xl lg:text-5xl"}>Hey there, <span className={"wave"}>👋🏻</span> I'm <span
+                className={"w-full flex flex-col text-center md:text-left leading-normal lg:leading-relaxed font-bold font-serif space-y-6 lg:space-y-8"}>
+                <h1 className={"text-3xl md:text-4xl lg:text-5xl"}>Hey there, <span className={"wave"}>👋🏻</span> I'm <span
                   className={"bg-clip-text text-transparent bg-gradient-to-r font-extrabold from-pink-600 to-sky-600 selection:text-gray-800"}>Naman Singh</span>
                 </h1>
                 <p className={"text-lgz lg:text-xl font-normal text-gray-300"}>Software developer based in bangalore. I

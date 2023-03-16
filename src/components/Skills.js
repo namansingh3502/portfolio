@@ -15,7 +15,7 @@ const ColTitleTag = (props) => {
 const ColElement = (props) => {
   return (
     <div className={"min-h-32  md:min-h-28 w-full flex px-2 gap-4"}>
-      <div className="h-full w-1/5 self-center align-middle text-6xl md:text-6xl flex justify-center">
+      <div className="h-full w-1/5 self-center align-middle text-6xl md:text-7xl flex justify-center">
         {"iconFont" in props.data ?
           <i className={props.data.iconFont}></i>
           : <img src={props.data.icon}/>
@@ -37,27 +37,27 @@ export default function Skills() {
   const ColValue = {
     "Language": [
       {
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg",
+        iconFont: "devicon-cplusplus-plain colored",
         title: "C++",
         description: "My go to programming language for competitive programming"
       },
       {
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        iconFont: "devicon-python-plain colored",
         title: "Python",
         description: "I also like playing with Python for side projects and keen to use this knowledge"
       },
       {
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        iconFont: "devicon-javascript-plain colored",
         title: "Javascript",
         description: "Mainly for adding functionality to front-end and ReactJs"
       },
       {
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg",
+        iconFont: "devicon-html5-plain colored",
         title: "HTML5",
         description: "Mostly writing HTML in JSX, but from time to time I find myself writing a plain, classic HTML file"
       },
       {
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg",
+        iconFont: "devicon-css3-plain-wordmark colored",
         title: "CSS3",
         description: "Styling of html elements; I usually go for styled-components or Sass or Less"
       }
@@ -69,22 +69,22 @@ export default function Skills() {
         description: "My go to framework of Python when it comes in building any back-end project"
       },
       {
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
+        iconFont: "devicon-react-original colored",
         title: "React",
         description: "My favourite library for building web front-ends and single page apps"
       },
       {
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original.svg",
+        iconFont: "devicon-gatsby-plain colored",
         title: "GatsbyJS",
         description: "Great framework for building blazing fast websites"
       },
       {
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg",
+        iconFont: "devicon-graphql-plain colored",
         title: "GraphQl",
         description: "Learning and implementing GraphQL API's for query processing"
       },
       {
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+        iconFont: "devicon-tailwindcss-plain colored",
         title: "TailwindCSS",
         description: "Styling of html elements."
       }

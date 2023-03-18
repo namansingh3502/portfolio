@@ -15,7 +15,7 @@ export default function Navigation(props) {
         return (
           <div className={"group relative"}>
             <div className={"absolute right-6 -top-1 group-hover:block hidden font-semibold text-xl inline-flex"}>{page.name}</div>
-            <a href={`#${page.id}`}>
+            <a href={`#${page.id}`} aria-label={page.id}>
               <div
                 className={`rounded-full w-4 h-4 ${props.activePage.includes(page.id) ? "bg-indigo-600" : "bg-gray-400"}`}/>
             </a>

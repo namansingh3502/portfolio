@@ -14,7 +14,7 @@ export default function WorkExperience() {
 
           <div className={"mt-5 ml-8 grid gap-4 pb-2"}>
             <div className={"relative w-[200px] h-[40px]"}>
-              <img className={"h-full w-full bg-white object-contain rounded-md px-1"} src={coverstack}></img>
+              <img className={"h-full w-full bg-white object-contain rounded-md px-1"} src={coverstack} alt={"coverstack"}></img>
             </div>
             <div>
               <h1 className={"text-xl font-semibold"}>Coverstack<span className={"text-lg font-normal"}> ( Sept 22 - Present ) </span>

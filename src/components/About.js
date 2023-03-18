@@ -45,7 +45,7 @@ export default function About() {
           <p>
             I created this website so I could showcase all this and through this process, make it easier for you to
             connect with me. If you like what you see, head over to the
-            <a className={"text-emerald-600 font-semibold"} href={""}><SPL_TEXT text={"contact section"}/></a>
+            <a className={"text-emerald-600 font-semibold"} href={"#"}><SPL_TEXT text={"contact section"}/></a>
             below and send me a text. I would love to hear from you!.
           </p>
         </div>

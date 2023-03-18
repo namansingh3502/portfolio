@@ -4,8 +4,7 @@ const ColTitleTag = (props) => {
   return (
     <div className={"h-24"}>
       <h1
-        className={"text-emerald-600 font-semibold font-serif text-4xl text-center"}
-        style={{"font-family": "Sriracha", "color": "rgb(46,196,182)"}}>
+        className={"text-emerald-600 font-semibold font-serif text-4xl text-center text-[#2ec4b6] font-[Sriracha]"}>
         {props.data}
       </h1>
     </div>
@@ -22,8 +21,7 @@ const ColElement = (props) => {
         }
       </div>
       <div className={"h-full w-4/5"}>
-        <h1 className={"text-2xl"}
-            style={{fontFamily: "Sriracha", color: "rgb(46,196,182)"}}>{props.data.title}</h1>
+        <h1 className={"text-2xl text-[#2ec4b6] font-[Sriracha]"}>{props.data.title}</h1>
         <p className={"text-md py-1"}>{props.data.description}</p>
       </div>
     </div>
@@ -105,6 +103,11 @@ export default function Skills() {
         iconFont: "devicon-amazonwebservices-plain-wordmark colored",
         title: "Amazon Web Services",
         description: "I use AWS for hosting my projects."
+      },
+      {
+        iconFont: "devicon-jupyter-plain-wordmark colored",
+        title: "Jupyter Notebook",
+        description: "I use Jupyter Notebook  experimentation with code."
       }
     ]
   }

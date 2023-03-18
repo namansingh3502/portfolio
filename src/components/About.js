@@ -2,7 +2,7 @@ import clipart from "./../images/clipart.webp"
 
 const SPL_TEXT = (props) => {
   return (
-    <span className={"font-semibold font-serif text-2xl"} style={{"color":"rgb(46,196,182)"}}> {props.text} </span>
+    <span className={"font-semibold font-serif text-lg lg:text-xl text-[#2ec4b6]"}> {props.text} </span>
   )
 }
 export default function About() {
@@ -14,7 +14,7 @@ export default function About() {
       <div className={"w-full flex justify-center items-center pb-6 md:py-10"}>
         <div className={"w-full hidden lg:block lg:w-2/5 flex items-center justify-center"}>
           <img
-            className={"w-full lg:w-4/5 flex flex-row object-contain"}
+            className={"w-full xl:px-16 flex justify-center items-center object-contain"}
             src={clipart}
             alt={"clipart"}
           />

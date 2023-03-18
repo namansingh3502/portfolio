@@ -4,6 +4,8 @@ import useScrollspy from "./components/Scrollspy";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import WorkExperience from "./components/WorkExperience";
 
 const App = () => {
   const activeId = useScrollspy(["home"]);
@@ -14,9 +16,8 @@ const App = () => {
       <Home/>
       <About/>
       <Skills/>
-      <section id={"projects"} className={"min-h-screen"}>
-        Projects
-      </section>
+      <WorkExperience/>
+      <Projects/>
     </div>
   );
 };

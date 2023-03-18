@@ -1,4 +1,8 @@
 import proj_forum from "../images/proj-forum.webp"
+import proj_dms from "../images/proj-dms.jpg"
+import proj_jrs from "../images/proj-jrs.webp"
+import proj_todo from "../images/proj-todo.png"
+import proj_api from "../images/proj-api.png"
 import github from "../images/github.svg"
 
 const PROJECT_CARD = (props) => {
@@ -29,7 +33,7 @@ const PROJECT_CARD = (props) => {
                   </p>
                 </div>
                 <div className={"w-full"}>
-                  <p className={"flex flex-wrap gap-x-2"}>
+                  <p className={"flex flex-wrap gap-x-3"}>
                     {data.tags.map((tag) => {
                       return (
                         <span className={"font-semibold text-lg text-[#0d9488]"}>#{tag}</span>
@@ -59,33 +63,39 @@ export default function Projects() {
       image: proj_forum,
       description: "College Forum is a social media platform for colleges which provides students, teachers and " +
         "administration with the opportunity to connect together on a single platform.",
-      github: "#",
+      github: "https://github.com/namansingh3502/Campus_Forum_Backend.git",
+      tags: ["Webdev", "Fullstack", "React", "Django", "Android Studeio", "TailwindCSS", "AWS"]
+    },
+    {
+      title: "Student Database Management System",
+      image: proj_dms,
+      description: "A platform for institutes for managing student and staff data. Designed various functionalities " +
+        "for teachers, students and admins each with their own respective scope of access, achieved with the help of" +
+        " an authentication system.",
+      github: "https://github.com/namansingh3502/School-Management-System.git",
       tags: ["Webdev", "Fullstack", "React", "Django", "TailwindCSS", "AWS"]
     },
     {
-      title: "College Forum",
-      image: proj_forum,
-      description: "College Forum is a social media platform for colleges which provides students, teachers and " +
-        "administration with the opportunity to connect together on a single platform.",
-      github: "#",
-      tags: ["Webdev", "Fullstack", "React", "Django", "TailwindCSS", "AWS"]
+      title: "Job Application System",
+      image: proj_jrs,
+      description: "A platform for posting and applying for job applications.",
+      github: "https://github.com/namansingh3502/Job-Application-Review-System.git",
+      tags: ["Webdev", "Fullstack", "React", "Django", "TailwindCSS"]
     },
     {
-      title: "College Forum",
-      image: proj_forum,
-      description: "College Forum is a social media platform for colleges which provides students, teachers and " +
-        "administration with the opportunity to connect together on a single platform.",
-      github: "#",
-      tags: ["Webdev", "Fullstack", "React", "Django", "TailwindCSS", "AWS"]
+      title: "Simple TO-DO",
+      image: proj_todo,
+      description: "Simple TO-DO application made while leaning React and Django.",
+      github: "https://github.com/namansingh3502/To-Do-App.git",
+      tags: ["Webdev", "Fullstack", "React", "Django"]
     },
     {
-      title: "College Forum",
-      image: proj_forum,
-      description: "College Forum is a social media platform for colleges which provides students, teachers and " +
-        "administration with the opportunity to connect together on a single platform.",
-      github: "#",
-      tags: ["Webdev", "Fullstack", "React", "Django", "TailwindCSS", "AWS"]
-    }
+      title: "Splitwise Clone",
+      image: proj_api,
+      description: "Api clone of application like Splitwise for splitting group expenses.",
+      github: "https://github.com/namansingh3502/Expense-Tracker.git",
+      tags: ["Webdev", "Backend", "Django", "Postman"]
+    },
   ]
 
   return (

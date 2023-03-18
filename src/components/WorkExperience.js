@@ -4,7 +4,7 @@ export default function WorkExperience() {
   return (
     <section id={"work_experience"}
              className={"container mx-auto flex-col items-center justify-center my-2 md:my-10 space-y-4 md:space-y-10 px-2"}>
-      <div className={"w-full text-center text-5xl font-serif"}>WORK EXPERIENCE</div>
+      <div className={"w-full text-center text-5xl font-serif"}>My Career</div>
 
       <div className={"flex justify-center group"}>
         <div className={"py-2 w-[700] flex "}>
@@ -14,7 +14,8 @@ export default function WorkExperience() {
 
           <div className={"mt-5 ml-8 grid gap-4 pb-2"}>
             <div className={"relative w-[200px] h-[40px]"}>
-              <img className={"h-full w-full bg-white object-contain rounded-md px-1"} src={coverstack} alt={"coverstack"}></img>
+              <img className={"h-full w-full bg-white object-contain rounded-md px-1"} src={coverstack}
+                   alt={"coverstack"}></img>
             </div>
             <div>
               <h1 className={"text-xl font-semibold"}>Coverstack<span className={"text-lg font-normal"}> ( Sept 22 - Present ) </span>
@@ -34,6 +35,16 @@ export default function WorkExperience() {
                   Currently working on core project and integration.
                 </li>
               </ul>
+            </div>
+            <div className={""}>
+              <p className={"flex flex-wrap gap-x-3"}>
+                {
+                  ["Django", "React", "Python", "Jupyter Notebook", "Backend"].map((tag) => {
+                    return (
+                      <span className={"font-semibold text-lg text-[#0d9488]"}>#{tag}</span>
+                    )
+                  })}
+              </p>
             </div>
           </div>
         </div>

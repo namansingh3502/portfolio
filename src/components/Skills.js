@@ -1,10 +1,11 @@
 import backpack from "../images/backpack.webp";
+import SectionTitle from "./SectionTitle";
 
 const ColTitleTag = (props) => {
   return (
     <div className={"h-24"}>
       <h1
-        className={"text-emerald-600 font-semibold font-serif text-4xl text-center text-[#2ec4b6] font-[Sriracha]"}>
+        className={"font-semibold font-serif text-4xl text-center text-[#2ec4b6] font-[Sriracha]"}>
         {props.data}
       </h1>
     </div>
@@ -13,7 +14,7 @@ const ColTitleTag = (props) => {
 
 const ColElement = (props) => {
   return (
-    <div className={"min-h-32  md:min-h-28 w-full flex px-2 gap-4"}>
+    <div className={"min-h-32 md:min-h-28 w-full flex px-2 gap-4"}>
       <div className="h-full w-1/5 self-center align-middle text-6xl md:text-7xl flex justify-center">
         {"iconFont" in props.data ?
           <i className={props.data.iconFont}></i>
@@ -21,7 +22,7 @@ const ColElement = (props) => {
         }
       </div>
       <div className={"h-full w-4/5"}>
-        <h1 className={"text-2xl text-[#2ec4b6] font-[Sriracha]"}>{props.data.title}</h1>
+        <h1 className={"text-2xl font-[Sriracha] text-[#0d9488]"}>{props.data.title}</h1>
         <p className={"text-md py-1"}>{props.data.description}</p>
       </div>
     </div>
@@ -115,7 +116,7 @@ export default function Skills() {
   return (
     <section id={"skills"}
              className={"container mx-auto flex-col items-center justify-center my-2 md:my-10 space-y-4 md:space-y-10 px-2"}>
-      <div className={"w-full text-center text-5xl font-serif"}>My Backpack</div>
+      <SectionTitle title={"My Backpack"}/>
       <div className={"w-full flex justify-center"}>
         <div className={"hidden md:block flex justify-center items-center"}>
           <img

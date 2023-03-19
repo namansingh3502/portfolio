@@ -1,10 +1,11 @@
 import coverstack from "../images/coverstack.svg"
+import SectionTitle from "./SectionTitle";
 
 export default function WorkExperience() {
   return (
     <section id={"work_experience"}
-             className={"container mx-auto flex-col items-center justify-center my-2 md:my-10 space-y-4 md:space-y-10 px-2"}>
-      <div className={"w-full text-center text-5xl font-serif"}>My Career</div>
+             className={"container mx-auto flex-col items-center justify-center my-2 md:my-10 space-y-4 md:space-y-10 px-4"}>
+      <SectionTitle title={"My Career"}/>
 
       <div className={"flex justify-center group"}>
         <div className={"py-2 w-[700] flex "}>

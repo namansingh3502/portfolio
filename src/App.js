@@ -6,12 +6,14 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import WorkExperience from "./components/WorkExperience";
+import Header from "./components/Header";
 
 const App = () => {
   const activeId = useScrollspy(["home"]);
 
   return (
     <div className={"text-white min-h-screen"}>
+      <Header/>
       {window.innerWidth > 650 ? <Navigation activePage={activeId}/> : null}
       <Home/>
       <About/>

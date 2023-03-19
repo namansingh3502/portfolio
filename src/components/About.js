@@ -1,8 +1,9 @@
 import clipart from "./../images/clipart.webp"
+import SectionTitle from "./SectionTitle";
 
 const SPL_TEXT = (props) => {
   return (
-    <span className={"font-semibold font-serif text-lg lg:text-xl text-[#2ec4b6]"}> {props.text} </span>
+    <span className={"font-semibold font-serif text-lg lg:text-xl text-[#0d9488]"}> {props.text} </span>
   )
 }
 export default function About() {
@@ -10,7 +11,7 @@ export default function About() {
   return (
     <section id={"about"}
              className={"container mx-auto flex-col items-center justify-center my-2 md:my-10 space-y-4 md:space-y-10 px-2"}>
-      <div className={"w-full text-center text-5xl font-serif"}>About me</div>
+      <SectionTitle title={"About Me"}/>
       <div className={"w-full flex justify-center items-center pb-6 md:py-10"}>
         <div className={"w-full hidden lg:block lg:w-2/5 flex items-center justify-center"}>
           <img

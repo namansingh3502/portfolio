@@ -4,6 +4,7 @@ import proj_jrs from "../images/proj-jrs.webp"
 import proj_todo from "../images/proj-todo.png"
 import proj_api from "../images/proj-api.png"
 import github from "../images/github.svg"
+import SectionTitle from "./SectionTitle";
 
 const PROJECT_CARD = (props) => {
   const data = props.project
@@ -100,8 +101,8 @@ export default function Projects() {
 
   return (
     <section id={"projects"}
-             className={"container mx-auto flex-col items-center justify-center my-2 md:my-10 space-y-4 md:space-y-10 px-2"}>
-      <div className={"w-full text-center text-5xl font-serif"}>Projects</div>
+             className={"container mx-auto flex-col items-center justify-center my-2 md:my-10 space-y-4 md:space-y-10 px-4"}>
+      <SectionTitle title={"Projects"}/>
       <ul className={"w-full grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4"}>
         {
           PROJECTS.map((project) => {

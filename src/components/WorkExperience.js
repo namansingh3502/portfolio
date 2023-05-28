@@ -19,21 +19,32 @@ export default function WorkExperience() {
                    alt={"coverstack"}></img>
             </div>
             <div>
-              <h1 className={"text-xl font-semibold"}>Coverstack<span className={"text-lg font-normal"}> ( Sept 22 - Present ) </span>
-              </h1>
-              <p className={"text-lg font-normal"}>Backend Developer Intern</p>
-              <p className={"text-md "}> Bangalore, India</p>
+              <h1 className={"text-2xl font-semibold"}>Coverstack</h1>
+              <p className={"text-lg"}> Bangalore, India</p>
             </div>
-            <div className={"ml-4"}>
+            <p className={"text-xl font-semibold"}>
+              Backend Developer Intern ( Sept 22 - May 23 )
+            </p>
+            <div className={"ml-6"}>
               <ul className={"list-disc"}>
                 <li className={"font-normal text-md"}>
-                  Automated master mapping process which was earlier done by a team manually.
+                  Automated the master mapping process, eliminating the need for manual work by the team and reducing
+                  errors by 20%.
                 </li>
                 <li>
-                  Developed Policy Reader to read system-generated pdf file and generate quotation.
+                  Developed and implemented a Policy Reader tool that streamlined the process of reading
+                  system-generated
+                  PDF files and generating quotations, reducing processing time by 60%.
                 </li>
+              </ul>
+            </div>
+            <p className={"text-xl font-semibold"}>
+              Software Development Engineer ( May 23 - Present )
+            </p>
+            <div className={"ml-6"}>
+              <ul className={"list-disc"}>
                 <li>
-                  Currently working on core project and integration.
+                  Currently working on core project and did multiple integration.
                 </li>
               </ul>
             </div>

@@ -22,16 +22,17 @@ export default function About() {
             alt={"clipart"}
           />
         </div>
-        <div className={"w-full lg:w-3/5 text-md xl:text-lg px-6 space-y-6 font-normal"}>
+        <div className={"w-full lg:w-3/5 text-md xl:text-xl px-6 space-y-6 font-normal"}>
           <p>
             Greetings! My name is <SPL_TEXT text={"Naman Singh,"}/> a recent graduate from
             <SPL_TEXT text={"SJB Institute of Technology, Bangalore"}/> where I completed my Bachelor's in
             <SPL_TEXT text={"Computer Science and Engineering."}/>
           </p>
           <p>
-            Currently I'm working as a <SPL_TEXT text={"Software Development "}/> at
-            <a href={'https://www.coverstack.in/'}><SPL_TEXT text={"CoverStack."}/></a>
-            I am working in the Term team and building the term product.
+            Currently I'm working as a <SPL_TEXT text={"Software Development Engineer"}/> at
+            <a href={'https://www.coverstack.in/'}><SPL_TEXT text={"CoverStack."}/></a> where I had previously
+            worked as a <SPL_TEXT text={"Backend Developer Intern."}/> Within the company, I have the privilege
+            of contributing to the development of the product as a member of the core team.
           </p>
           <p>
             My <SPL_TEXT text={"fascination with computers"}/> has been the driving force behind my pursuit of a career

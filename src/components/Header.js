@@ -16,7 +16,7 @@ export default function Header() {
           window.scrollY > 10 ? "bg-opacity-60 backdrop-blur-md backdrop-saturate-150 border-gray-400 border-b-[1px]" : ""}`
       }
     >
-      < header className="h-16 flex items-center max-w-7xl mx-auto justify-between px-8">
+      <header className="h-16 flex items-center max-w-7xl mx-auto justify-between px-8">
         <div className="h-16 flex items-center">
           <a className="" aria-label="Naman Singh" href="/">
             <img className={"h-12 w-12"} src={logo} aria-label={"logo"} alt={"logo"}/>

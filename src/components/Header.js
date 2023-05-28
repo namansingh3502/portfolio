@@ -12,34 +12,32 @@ export default function Header() {
   return (
     <div
       className={
-        window.scrollY > 10 ?
-          "fixed top-0 left-0 right-0 z-10 transform transition pt-4 border-gray-800 backdrop-filter bg-gray-900 " +
-          "bg-opacity-80 border-b -translate-y-4 backdrop-blur-md backdrop-saturate-150"
-          :
-          ""
+        `h-20 fixed top-0 left-0 right-0 z-10 transform transition backdrop-filter bg-gray-900 ${
+          window.scrollY > 10 ? "bg-opacity-60 backdrop-blur-md backdrop-saturate-150 border-gray-400 border-b-[1px]" : ""}`
       }
     >
-      <header className="flex items-center max-w-7xl mx-auto justify-between py-4 px-6">
-        <div><a className="" aria-label="Naman Singh" href="/">
-          <div className="flex items-center justify-between">
-            <div className="mr-3">
-              <img className={"h-12 w-12"} src={logo} aria-label={"logo"}/>
-            </div>
-          </div>
-        </a></div>
-        <div className="flex items-center gap-3 text-LG leading-5">
-          <div className="hidden sm:flex sm:gap-3">
-            {LINKS.map((item) => {
-              return (
-                <a
-                  className="px-4 py-2 font-medium text-gray-100 hover:bg-white hover:bg-gray-700 rounded-md transition-colors duration-300"
-                  href={item.id}
-                >
+      < header className="h-20 flex items-center max-w-7xl mx-auto justify-between px-8">
+        <div className="h-20 flex items-center">
+          <a className="" aria-label="Naman Singh" href="/">
+            <img className={"h-14 w-14"} src={logo} aria-label={"logo"} alt={"logo"}/>
+          </a>
+        </div>
+        <div className="h-20 hidden md:flex items-center justify-center px-2">
+          {LINKS.map((item) => {
+            return (
+              <a
+                className="h-12 w-24 m-1 flex items-center justify-center"
+                href={item.id}
+                key={item.id}
+                aria-label={item.title}
+              >
+                <div
+                  className={"h-12 px-4 flex justify-center items-center tracking-wide text-lg font-semibold font-[Sriracha] text-gray-100 hover:text-[#2ec4b6] hover:border-[3px] hover:border-[#2ec4b6] rounded-lg"}>
                   {item.title}
-                </a>
-              )
-            })}
-          </div>
+                </div>
+              </a>
+            )
+          })}
         </div>
       </header>
     </div>

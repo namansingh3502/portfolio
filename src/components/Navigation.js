@@ -14,10 +14,10 @@ export default function Navigation(props) {
       {PAGE.map((page) => {
         return (
           <div className={"group relative"}>
-            <div className={"absolute right-6 -top-1 group-hover:block hidden font-semibold text-xl inline-flex"}>{page.name}</div>
+            <div className={"absolute right-6 -top-1 group-hover:block hidden font-semibold text-xl"}>{page.name}</div>
             <a href={`#${page.id}`} aria-label={page.id}>
               <div
-                className={`rounded-full w-4 h-4 ${props.activePage.includes(page.id) ? "bg-indigo-600" : "bg-gray-400"}`}/>
+                className={`w-1 ${props.activePage.includes(page.id) ? "bg-[#2ec4b6] h-8" : "bg-gray-600 h-4"}`}/>
             </a>
           </div>
         )

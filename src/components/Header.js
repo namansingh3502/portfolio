@@ -12,17 +12,18 @@ export default function Header() {
   return (
     <div
       className={
-        `h-20 fixed top-0 left-0 right-0 z-10 transform transition backdrop-filter bg-gray-900 ${
+        `h-16 fixed top-0 left-0 right-0 z-10 transform transition backdrop-filter bg-gray-900 ${
           window.scrollY > 10 ? "bg-opacity-60 backdrop-blur-md backdrop-saturate-150 border-gray-400 border-b-[1px]" : ""}`
       }
     >
-      < header className="h-20 flex items-center max-w-7xl mx-auto justify-between px-8">
-        <div className="h-20 flex items-center">
+      < header className="h-16 flex items-center max-w-7xl mx-auto justify-between px-8">
+        <div className="h-16 flex items-center">
           <a className="" aria-label="Naman Singh" href="/">
-            <img className={"h-14 w-14"} src={logo} aria-label={"logo"} alt={"logo"}/>
+            <img className={"h-12 w-12"} src={logo} aria-label={"logo"} alt={"logo"}/>
           </a>
         </div>
-        <div className="h-20 hidden md:flex items-center justify-center px-2">
+        <div
+          className="h-16 hidden md:flex items-center justify-center px-2 tracking-wide text-lg font-semibold font-[Sriracha] text-gray-100">
           {LINKS.map((item) => {
             return (
               <a
@@ -32,7 +33,7 @@ export default function Header() {
                 aria-label={item.title}
               >
                 <div
-                  className={"h-12 px-4 flex justify-center items-center tracking-wide text-lg font-semibold font-[Sriracha] text-gray-100 hover:text-[#2ec4b6] hover:border-[3px] hover:border-[#2ec4b6] rounded-lg"}>
+                  className={"h-12 px-4 flex justify-center items-center hover:text-[#2ec4b6] hover:border-[3px] hover:border-[#2ec4b6] rounded-lg"}>
                   {item.title}
                 </div>
               </a>

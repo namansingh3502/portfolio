@@ -37,7 +37,7 @@ export default function Home() {
         <div className={"w-full max-w-7xl grid grid-cols-9 gap-2 px-2 md:px-6"}>
           <div className={"col-start-1 col-span-9 md:col-span-3 flex justify-center items-center rounded-2xl lg:px-2"}>
             <img
-              className={"max-h-[350px] w-auto flex flex-row object-contain m-4 lg:my-0 rounded-2xl border-2 border-amber-400 p-2"}
+              className={"max-h-[400px] w-auto flex flex-row object-contain m-4 lg:my-0 rounded-2xl border-2 border-amber-400 p-2"}
               src={image}
               alt={"profile photo"}
             />
@@ -48,9 +48,9 @@ export default function Home() {
 
             <div className={"flex flex-col gap-2 justify-between items-center md:items-start space-y-4"}>
               <div
-                className={"w-full flex flex-col text-center md:text-left leading-normal lg:leading-relaxed font-bold font-serif space-y-6 lg:space-y-8"}>
+                className={"w-full flex flex-col text-center md:text-left leading-normal lg:leading-relaxed font-bold font-[League Spartan] space-y-6 lg:space-y-8"}>
                 <h1 className={"text-3xl md:text-4xl lg:text-5xl"}>Hey there, <span
-                  className={"wave"}>👋🏻</span> I'm <span
+                  className={"wave mx-1"}>👋🏻</span> I'm <span
                   className={"bg-clip-text text-transparent bg-gradient-to-r font-extrabold from-pink-600 to-sky-600 selection:text-gray-800"}>Naman Singh</span>
                 </h1>
                 <p className={"text-lgz lg:text-xl font-normal text-gray-300"}>Software developer based in bangalore. I
@@ -58,20 +58,20 @@ export default function Home() {
               </div>
               <div className={"h-20 w-full flex items-center justify-center md:justify-start space-x-4"}>
                 {icons.map((item) => {
-                    return (
-                      <a className={"w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center"}
-                         href={item.profile}
-                         key={item.id}
-                         aria-label={item.id}
-                      >
-                        <div className={"bg-white rounded-full w-10 h-10 lg:h-12 lg:w-12 hover:h-14 hover:w-14"}>
-                          <img className={"h-full w-full"} src={item.icon}
-                               alt="React Logo"/>
-                        </div>
-                      </a>
-                    )
-                  }
-                )}
+                  return (
+                    <a className={"w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center"}
+                       href={item.profile}
+                       key={item.id}
+                       aria-label={item.id}
+                    >
+                      <div
+                        className={"bg-white rounded-full w-10 h-10 lg:h-12 lg:w-12 hover:h-14 hover:w-14 duration-200"}>
+                        <img className={"h-full w-full"} src={item.icon}
+                             alt="React Logo"/>
+                      </div>
+                    </a>
+                  )
+                })}
               </div>
             </div>
           </div>

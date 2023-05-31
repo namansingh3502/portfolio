@@ -39,12 +39,12 @@ export default function WorkExperience() {
               </ul>
             </div>
             <p className={"text-xl font-semibold"}>
-              Software Development Engineer ( May 23 - Present )
+              Software Development Engineer ( June 23 - Present )
             </p>
             <div className={"ml-6"}>
               <ul className={"list-disc"}>
                 <li>
-                  Currently working on core project and did multiple integration.
+                  Did multiple integration for various insurers.
                 </li>
               </ul>
             </div>

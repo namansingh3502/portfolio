@@ -1,4 +1,4 @@
-import image from '../images/me.webp';
+import image from '../images/me.jpg';
 import twitter_svg from '../images/twitter.svg'
 import linkedin_svg from '../images/linkedin.svg'
 import instagram_svg from '../images/instagram.svg'

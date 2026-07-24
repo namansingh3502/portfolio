@@ -1,31 +1,25 @@
-import image from '../images/me.jpg';
-import twitter_svg from '../images/twitter.svg'
-import linkedin_svg from '../images/linkedin.svg'
-import instagram_svg from '../images/instagram.svg'
-import github_svg from '../images/github.svg'
+const profile = new URL('../images/me.jpg', import.meta.url)
 
 const icons = [
-
   {
     id: "linkedin",
-    icon: linkedin_svg,
     profile: `https://www.linkedin.com/in/namansingh35/`,
+    url: new URL('../images/linkedin.svg', import.meta.url)
   },
   {
     id: "twitter",
-    icon: twitter_svg,
     profile: `mailto:namansingh0305@gmail.com`,
-
+    url: new URL('../images/twitter.svg', import.meta.url)
   },
   {
     id: "instagram",
-    icon: instagram_svg,
     profile: `https://www.instagram.com/naman.singh_35/`,
+    url: new URL('../images/instagram.svg', import.meta.url)
   },
   {
     id: "github",
-    icon: github_svg,
-    profile: `https://github.com/namansingh3502/`
+    profile: `https://github.com/namansingh3502/`,
+    url: new URL('../images/github.svg', import.meta.url)
   }
 ]
 
@@ -38,7 +32,7 @@ export default function Home() {
           <div className={"col-start-1 col-span-9 md:col-span-3 flex justify-center items-center rounded-2xl lg:px-2"}>
             <img
               className={"max-h-[400px] w-auto flex flex-row object-contain m-4 lg:my-0 rounded-2xl border-2 border-amber-400 p-2"}
-              src={image}
+              src={profile}
               alt={"profile photo"}
             />
           </div>
@@ -66,7 +60,7 @@ export default function Home() {
                     >
                       <div
                         className={"bg-white rounded-full w-10 h-10 lg:h-12 lg:w-12 hover:h-14 hover:w-14 duration-200"}>
-                        <img className={"h-full w-full"} src={item.icon}
+                        <img className={"h-full w-full"} src={item.url}
                              alt="React Logo"/>
                       </div>
                     </a>

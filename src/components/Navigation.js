@@ -13,7 +13,7 @@ export default function Navigation(props) {
 
       {PAGE.map((page) => {
         return (
-          <div className={"group relative"}>
+          <div className={"group relative"} key={page.name}>
             <div className={"absolute right-6 -top-1 group-hover:block hidden font-semibold text-xl"}>{page.name}</div>
             <a href={`#${page.id}`} aria-label={page.id}>
               <div

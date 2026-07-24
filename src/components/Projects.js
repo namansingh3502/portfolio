@@ -1,10 +1,11 @@
-import proj_forum from "../images/proj-forum.webp"
-import proj_dms from "../images/proj-dms.jpg"
-import proj_jrs from "../images/proj-jrs.webp"
-import proj_todo from "../images/proj-todo.png"
-import proj_api from "../images/proj-api.png"
-import github from "../images/github.svg"
 import SectionTitle from "./SectionTitle";
+
+const proj_forum = new URL('../images/proj-forum.webp', import.meta.url)
+const proj_dms = new URL('../images/proj-dms.jpg', import.meta.url)
+const proj_jrs = new URL('../images/proj-jrs.webp', import.meta.url)
+const proj_todo = new URL('../images/proj-todo.png', import.meta.url)
+const proj_api = new URL('../images/proj-api.png', import.meta.url)
+const github = new URL('../images/github.svg', import.meta.url)
 
 const PROJECT_CARD = (props) => {
   const data = props.project
@@ -37,7 +38,7 @@ const PROJECT_CARD = (props) => {
                   <p className={"flex flex-wrap gap-x-3"}>
                     {data.tags.map((tag) => {
                       return (
-                        <span className={"font-semibold text-lg text-[#0d9488]"}>#{tag}</span>
+                        <span className={"font-semibold text-lg text-[#0d9488]"} key={tag}>#{tag}</span>
                       )
                     })}
                   </p>

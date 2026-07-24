@@ -1,5 +1,6 @@
-import clipart from "./../images/clipart.webp"
 import SectionTitle from "./SectionTitle";
+
+const clipart = new URL('./../images/clipart.webp', import.meta.url)
 
 const SPL_TEXT = (props) => {
   return (

@@ -1,4 +1,4 @@
-import logo from "../images/logo.png"
+const logo = new URL('../images/logo.png', import.meta.url)
 
 export default function Header() {
 

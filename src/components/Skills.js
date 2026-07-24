@@ -1,6 +1,7 @@
-import backpack from "../images/backpack.webp";
-import postman from "../images/postman.png"
 import SectionTitle from "./SectionTitle";
+
+const backpackIcon = new URL('../images/backpack.webp', import.meta.url)
+const postmanIcon = new URL('../images/postman.png', import.meta.url)
 
 const ColTitleTag = (props) => {
   return (
@@ -122,7 +123,7 @@ export default function Skills() {
         description: "Facilitating interactive and collaborative data analysis workflows."
       },
       {
-        icon: postman,
+        icon: postmanIcon,
         title: "Postman",
         description: "Simplifying API development and testing processes efficiently."
       }
@@ -137,7 +138,7 @@ export default function Skills() {
         <div className={"hidden md:flex justify-center items-center"}>
           <img
             className={"flex flex-row object-contain m-4 lg:my-0 h-44"}
-            src={backpack}
+            src={backpackIcon}
             alt={"backpack"}
           />
         </div>

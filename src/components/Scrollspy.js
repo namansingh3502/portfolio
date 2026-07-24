@@ -1,29 +1,30 @@
-import {useLayoutEffect, useState} from "react";
+import { useLayoutEffect, useState } from "react";
 
 const useScrollspy = () => {
   const [activeId, setActiveId] = useState(["home"]);
 
   useLayoutEffect(() => {
     const listener = () => {
-      const PageID = ["home", "about", "skills", "projects"]
-      const page_height = window.innerHeight
-      let active_page = []
+      const PageID = ["home", "about", "skills", "projects"];
+      const page_height = window.innerHeight;
+      let active_page = [];
 
       for (let i = 0; i < PageID.length; i++) {
+        const el = document.getElementById(PageID[i]);
+        if (!el) continue; // skip sections that aren't mounted / don't exist
 
-        const element = document.getElementById(PageID[i]).getBoundingClientRect()
-        const top = element.top
-        const bottom = element.bottom
+        const element = el.getBoundingClientRect();
+        const top = element.top;
+        const bottom = element.bottom;
 
-        if( top >= 0 && top < page_height * 0.8 ){
-          active_page.push(PageID[i])
+        if (top >= 0 && top < page_height * 0.8) {
+          active_page.push(PageID[i]);
         }
-        if( bottom >= page_height * 0.2 && bottom < page_height ){
-          active_page.push(PageID[i])
+        if (bottom >= page_height * 0.2 && bottom < page_height) {
+          active_page.push(PageID[i]);
         }
-
       }
-      setActiveId( active_page );
+      setActiveId(active_page);
     };
 
     listener();

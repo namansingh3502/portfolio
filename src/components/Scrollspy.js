@@ -5,7 +5,7 @@ const useScrollspy = () => {
 
   useLayoutEffect(() => {
     const listener = () => {
-      const PageID = ["home", "about", "skills", "projects"];
+      const PageID = ["home", "about", "skills", "work_experience", "projects"];
       const page_height = window.innerHeight;
       let active_page = [];
 
